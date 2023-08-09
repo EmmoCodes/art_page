@@ -29,8 +29,8 @@ function ArtDetails() {
         alt=""
       />
       <p>Artist: {artItem.artist_title}</p>
-      <h2>Kunstname: {artItem.title}</h2>
-      <p>Fertigstellung: {artItem.date_display}</p>
+      <h2>Artname: {artItem.title}</h2>
+      <p>Date of release: {artItem.date_display}</p>
     </section>
   )
 }

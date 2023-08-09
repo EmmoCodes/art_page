@@ -3,6 +3,8 @@ body {
   background: center / cover no-repeat url('./assets/img/background.jpg');
   min-height: 98.4vh;
   background-attachment: fixed;
+  position: relative;
+
 }
 
 h1, p, a, li {
@@ -13,11 +15,13 @@ h1 {
   color: orange;
   max-width: fit-content;
   margin-inline: auto;
+  font-size: 3rem;
 
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 li {
@@ -30,6 +34,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
 
   .navbar_logo {
     max-width: fit-content;
@@ -60,7 +66,7 @@ li {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #807e7e;
+    background-color: #b4b0b0;
     border-radius: 25px;
     color: #fff;
     overflow: hidden;
@@ -84,7 +90,23 @@ li {
 
 .details {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
+  color: black;
+  background-color: #b4b0b0;
+  max-width: 700px;
+  margin-inline: auto;
+  border-radius: 25px;
+  color: #fff;
+  overflow: hidden;
+
+  p:nth-of-type(1) {
+    color: black;
+  }
+
+
+  img {
+    max-width: 700px;
+  }
 }
 
 .goto_art {
@@ -92,6 +114,19 @@ li {
   color: orange;
   border: solid orange 5px;
   margin-left: 25%;
-  
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 25%;
+  min-width: 710px;
+  transition: 500ms;
+
+  &:hover {
+    background-color: black;
+    color: #fff;
+    border: solid white 5px;
+
+  }
+
 }
 

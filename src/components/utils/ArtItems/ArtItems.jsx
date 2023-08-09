@@ -12,7 +12,7 @@ function ArtItems({ art }) {
         />
         <p>Artist: {art.artist_title}</p>
         <h2>Artname: {art.title}</h2>
-        <p>Date: {art.date_display}</p>
+        <p>Date of release: {art.date_display}</p>
       </div>
     </Link>
   )

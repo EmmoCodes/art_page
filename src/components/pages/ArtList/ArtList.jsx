@@ -16,7 +16,6 @@ function ArtList() {
       .then(response => setArtItems(response.data))
       .catch(error => console.log(error.message))
   }, [])
-  console.log(artItems)
 
   return (
     <section className={'img_grid'}>
