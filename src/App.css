@@ -1,0 +1,87 @@
+body {
+  background: center/cover no-repeat url("./assets/img/background.jpg");
+  min-height: 98.4vh;
+  background-attachment: fixed;
+}
+
+h1, p, a, li {
+  font-family: "Cascadia Code";
+}
+
+h1 {
+  color: orange;
+  max-width: fit-content;
+  margin-inline: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  height: 5vh;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .navbar_logo {
+  max-width: fit-content;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+.navbar ul {
+  padding-top: 0.1rem;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.img_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  overflow: hidden;
+  padding: 2rem;
+  gap: 100px;
+}
+.img_grid div {
+  transition: 400ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #807e7e;
+  border-radius: 25px;
+  color: #fff;
+  overflow: hidden;
+}
+.img_grid div p:nth-of-type(1) {
+  color: black;
+}
+.img_grid div:hover {
+  transform: scale(1.2);
+}
+.img_grid div .art_img {
+  object-fit: contain;
+  max-height: 300px;
+}
+
+.details {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.goto_art {
+  font-size: 5rem;
+  color: orange;
+  border: solid orange 5px;
+  margin-left: 25%;
+}
+
+/*# sourceMappingURL=App.css.map */
